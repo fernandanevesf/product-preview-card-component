@@ -2,32 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@200..900&family=Lexend+Deca:wght@200..900">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Fraunces">
-  <title>Frontend Mentor | Product preview card component</title>
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
 </head>
-
 <body>
-<section class="flex-container">
+  <main>
+  <div class="container">
   <picture>
-<source media="(min-width: 768px)" srcset="./images/image-product-desktop.jpg">
-<img src="./images/image-product-mobile.jpg">
-  </picture>
-  <div class="description">
-  <h1>PERFUME</h1>
+    <source srcset="images/image-header-mobile.jpg" media="(max-width:768px)">
+    <img src="images/image-header-desktop.jpg" alt="">
+  </picture>  
+  <div class="text-container">
+  <h1>Get <span>insights</span> that help your business grow.</h1>
 
-  <h2>Gabrielle Essence Eau De Parfum</h2>
+  <p class="discover">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+  experience, and overall efficiency.</p>
 
-  <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.</p>
-
-  <p class="price"><span>$149.99</span>
-  <s>$169.99</s></p>
-
- <button><img src="./images/icon-cart.svg">Add to Cart</button>
-  </div>
-  </section>
+<ul>
+<li><span class="number">10k+</span><br> companies</li>
+<li><span class="number">314</span><br> templates</li>
+<li><span class="number">12M+</span><br> queries</li>
+</ul>
+</div><!--text-container-->
+</div><!--container-->
+</main>
 </body>
 </html>
